@@ -1,0 +1,347 @@
+@media screen and (max-width:768px){
+/* --> common   */
+  .h2 {
+    font-size: calc(42px * 0.7);
+  }
+  
+.padding-b60 {
+  padding-bottom: calc(60px * 0.7);
+}
+.padding-t60 {
+  padding-top: calc(60px * 0.7);
+}
+  
+/* common <--  */
+  header{
+   height: auto;
+  }
+  header ul.gnb{
+   display: none;
+  }
+  /* 타이틀영역   */
+  #title .wrap{
+   height: 58.59375vw;
+  }
+  #title ul.slide li h2{
+  font-size: calc(50px * 0.7);
+  }
+  #title ul.slide li p{
+  font-size: calc(17px * 0.7);
+  }
+  #title span.control{
+  height: calc(50px * 0.7);
+  top: calc(50% - (25px * 0.7));
+  }
+  #title span.control a{
+  width: calc(40px * 0.7);
+  height: calc(100px * 0.7);
+  }
+  #title span.control a:nth-child(1)::before{
+  width: calc(20px * 0.7);
+  height: calc(20px * 0.7);
+  transform: translateX(calc(8px * 0.7)) rotate(-45deg);
+  }
+  #title span.control a:nth-child(2)::before{
+  width: calc(20px * 0.7);
+  height: calc(20px * 0.7);
+  transform: translateX(calc(-5px * 0.7)) rotate(45deg);
+  }
+ /* 삼성전자  */
+  #introduction h2{
+  font-size: calc(42px * 0.7);
+  }
+  #introduction ul li{
+  width: calc(50% - 15px / 2);
+  }
+  #introduction ul{
+  padding: 0 15px;
+  }
+  #introduction ul li a::before{
+  background-size: 130%;
+  }
+  #introduction ul li:nth-child(1) a:hover::before, #introduction ul li:nth-child(2) a:hover::before, #introduction ul li:nth-child(3) a:hover::before, #introduction ul li:nth-child(4) a:hover::before {
+  background-size: 135%;
+}
+ /*  채용  */
+  #introduction ul li:nth-child(5)::before{
+  display: none;
+  }
+  #introduction ul li:nth-child(5) a::before{
+  display: block;
+  width: 100%;
+  background-size: cover;
+  }
+  #introduction ul li:nth-child(5) a span{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  }
+  #introduction ul li:nth-child(5) a::after{
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  top: auto;
+  bottom: 0px;
+  padding: 10px 0;
+  }
+  #introduction ul li:nth-child(6) a::before{
+  width: 100%;
+  }
+  #introduction ul li:nth-child(7) a::before{
+  width: 100%;
+  }
+  /* ----------비전------------- */
+  #vision .wrapin{
+    width: 100%;
+    padding: initial;
+  }
+  #vision .wrapin::after{
+    display: none;
+  }
+  #vision .wrap{
+    height: auto;
+  }
+/*   기업정보  */
+  #history hgroup{
+    
+  }
+  #history hgroup h3{
+  transform: scale(0.7);
+  }
+  #history ul{
+  flex-direction: column;
+  align-items: center;
+  }
+  #history ul li{
+  width: calc(100% - 60px);
+  }
+/*  사업  */
+  #business{
+  padding: 0 30px;
+  }
+  #business .wrap{
+  align-items: center;
+  padding: 20px 0;
+  height: 52.08333333333333vw;
+  min-height: 320px;
+  }
+  #business .wrap > *{
+  width: 100%;
+  }
+  #business .wlist{
+    position: static;
+    margin-bottom: 20px;
+  }
+  #business .wlist .list{
+  }
+  #business hgroup h3{
+    
+  font-size: calc(42px * 0.7);
+  }
+  #business a.more{
+    
+  margin-right: auto;
+  margin: 0 auto;
+  }
+/* 경영   */
+  #society ul{
+  padding: 0 30px;
+  }
+  #society ul li {
+  width: calc(50% - 80px / 8);
+  }
+/*  채용  */
+  
+  #recruit .wrap{
+   padding: 0 30px;
+   height: 78.125vw;
+  }
+  #recruit .wrap::after{
+   display: none;
+  }
+  #recruit .wrapin{
+    width: 100%;
+    padding-right: initial;
+  }
+/* 하단   */
+  footer ul.fnb{
+  flex-direction: column;
+  padding: 0;
+  }
+  footer ul.fnb > li{
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  footer ul.fnb > li ul{
+  display: none;
+  }
+  footer ul.fnb > li h2{
+  margin: 0;
+  line-height: 3.5;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  }
+  footer ul.fnb > li h2:hover+ul{
+    display: block;
+  }
+  footer ul.fnb > li h2::after{
+    content: "+";
+    font-size: 20px;
+    line-height: 0.5;
+    vertical-align: -2px;
+  }
+  
+  footer .middle{
+    
+  padding: 0 30px;
+  padding-bottom: 30px;
+  }
+  footer div.bottom{
+  flex-direction: column;
+  }
+  footer div.bottom .left{
+    
+  padding: 0 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  footer div.bottom .left li:nth-child(5),footer div.bottom .left li:nth-child(6){
+    
+  width: 42%;
+  margin: 13px 0;
+  }
+  footer div.bottom .left li:nth-child(5) select, footer div.bottom .left li:nth-child(6) select{
+  width: 100%;
+  }
+  
+  footer div.bottom .right{
+  justify-content: center;
+  }
+
+}
+
+/* 태블릿 */
+
+@media screen and (max-width:1024px){
+  /* --> common   */
+  .h2 {
+    font-size: calc(42px * 0.7);
+  }
+  .padding-b60 {
+    padding-bottom: calc(60px * 0.7);
+  }
+  .padding-t60 {
+    padding-top: calc(60px * 0.7);
+  }
+  section > .wrap {
+   padding: 0 20px;
+  }
+  
+/* common <--  */
+  header .wrap{
+    position: relative;
+  }
+  header ul.gnb{
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  left: 0;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.7);
+  }
+  header ul.gnb::before{
+  top: 48px;
+  }
+  header ul.gnb:hover::before{
+  height: 200px;
+  }
+  header ul.gnb > li h2{
+    line-height: 3;
+  }
+  header ul.gnb > li ul{
+  top: 48px;
+  margin-top: 0;
+  }
+  header ul.enb{
+    bottom: -319px;
+    background-color: #fff;
+  }
+/*  삼성전자소개  */
+  #introduction{
+  height: 58.59375vw;
+  }
+  #introduction ul li a::before{
+  height: 13.671875vw;
+  background-position-y: top;
+  }
+  #introduction ul li:nth-child(5) a::before{
+  height: 140px;
+  background-size: cover;
+  }
+  #introduction ul li:nth-child(5) a::after{
+  font-size: 14px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  }
+/*  비전  */
+  #vision .wrap{
+  height: 58.59375vw;
+  padding: 0 20px;
+  }
+  #vision .wrapin{
+    width: 62%;
+  }
+  #vision .wrapin::after{
+  width: calc(100% - 30px - 20px);
+  transform: translateX(20px);
+  }
+  
+/* 기업정보   */
+  #history ul li::before{
+    
+  height: 26.83203125vw;
+  }
+  #business{
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  #business .wrap{
+  height: 39.0625vw;
+  }
+/*  채용  */
+  #recruit .wrap{
+    
+  height: 58.59375vw;
+  padding-top: 30px;
+  }
+  #recruit .wrap::after{
+  width: calc(53% - 20px);
+  transform: translateX(-20px);
+  }
+
+/*    */
+/*  하단  */
+  footer div.bottom{
+    
+  display: initial;
+  padding-top: 20px;
+  }
+  footer div.bottom .right{
+    
+  justify-content: center;
+  margin-top: 20px;
+  }
+}
+
+
+
+

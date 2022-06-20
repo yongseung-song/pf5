@@ -1,0 +1,220 @@
+header {
+  padding: 24px 0;
+  position: relative;
+  /*! height: 250px; */
+  /*! position: fixed; */
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  animation-name: headerdown;
+  animation-direction: reverse;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes headerdown{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+     transform: translateY(-100%);
+  }
+}
+header:hover{
+  height: 250px;
+  position: fixed;
+}
+header::before{
+/*   content: "";
+  height: 70px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  left: 0;
+  top: 0; */
+}
+header .wrap{
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+header h1.h1 {
+  font-size: 20px;
+  position: relative;
+}
+header h1 a {
+  color: #000;
+  text-transform: uppercase;
+}
+header h1 a{
+
+}
+header ul.gnb {
+  display: flex;
+  width: 72%;
+  position: relative;
+  z-index: 2;
+}
+/* header ul.gnb:hover .sub,header ul.gnb:hover::before{
+ display: block; 
+}
+header ul.gnb:hover + .enb{
+ display: flex; 
+} */
+/* header ul.gnb::before{
+  content: "";
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  z-index: 1;
+  border-top: 1px solid #ccc;
+  display: none;
+} */
+.bg{
+  background-color: #eee;
+  width: 100%;
+  height: 0%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  z-index: 1;
+  border-top: 1px solid #ccc;  
+}
+.bg.bgSlide{
+  animation-name: bgSlide;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes bgSlide{
+  100%{
+    height: 100%;
+  }
+}
+
+
+
+header ul.gnb>li {
+  padding: 0px 43px;
+  display: block;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  /*! width: calc(100% / 5); */
+  cursor: pointer;
+}
+header ul.gnb li a {
+  padding: 0px 10px;
+  display: block;
+  color: #000;
+}
+header ul.gnb > li ul{
+  margin-top: 30px;
+  position: absolute;
+  display: none;
+}
+header ul.gnb > li ul li{
+  
+}
+header ul.gnb > li ul li a{
+  padding: 0;
+  line-height: 2.5;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  color: #555;
+}
+header ul.enb{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -60px;
+  z-index: 1;
+  display: flex;
+  justify-content: right;
+  padding-right: calc((100% - 1100px) / 2);
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  display: none;
+}
+header ul.enb li{
+  
+}
+header ul.enb li a{
+  display: block;
+  padding: 0 32px;
+  text-transform: capitalize;
+  position: relative;
+  line-height: 3;
+  height: 48px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #555;
+}
+header ul.enb li:nth-child(2) a:before{
+  content: "";
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #4b4444;
+  position: absolute;
+  top: calc(50% - 5px);
+  left: 0;
+}
+header a.allmenu {
+  font-size: 0;
+  border: 2px solid red;
+  width: 7px;
+  height: 7px;
+  position: relative;
+  display: block;
+}
+header a.allmenu span{
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #000;
+  position: absolute;
+  left: -15px;
+  top: -2px;
+  transition: all 0.5s;
+}
+header a.allmenu span:hover{
+  border-color: red;
+}
+header a.allmenu span::before{
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #000;
+  position: absolute;
+  left: -2px;
+  top: 11px;
+  transition: all 0.5s;
+}
+header a.allmenu span:hover::before{
+  border-color: red;
+}
+header a.allmenu span::after{
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #000;
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  transition: all 0.5s;
+}
+header a.allmenu span:hover::after{
+  border-color: red;
+}
+header:hover+div{
+  margin-top:68px; 
+}
